@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corpus: company knowledge service</title>
+<meta name="description" content="Corpus is a company knowledge service. It ingests documents, indexes them for hybrid search, extracts structured facts, and serves them to other systems over MCP.">
+<link rel="canonical" href="https://dascorpus.xyz/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Corpus">
+<meta property="og:url" content="https://dascorpus.xyz/">
+<meta property="og:title" content="Corpus: company knowledge service">
+<meta property="og:description" content="Ingests documents, indexes them for hybrid search, extracts structured facts, and serves them to other systems over MCP.">
+<meta property="og:image" content="https://dascorpus.xyz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Corpus: company knowledge service">
+<meta name="twitter:description" content="Ingests documents, indexes them for hybrid search, extracts structured facts, and serves them to other systems over MCP.">
+<meta name="twitter:image" content="https://dascorpus.xyz/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Corpus",
+  "url": "https://dascorpus.xyz/",
+  "description": "Company knowledge service: ingests documents, indexes them for hybrid search, extracts structured facts, and serves them to other systems over MCP."
+}
+</script>
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --gray-50: #fafafa;
+  --gray-100: #f4f4f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 16px/28px var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: 100%; max-width: 920px; margin: 0 auto; padding: 0 24px; }
+
+/* Header ------------------------------------------------------------- */
+header {
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky; top: 0; background: #fff;
+  z-index: 10;
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.mark { display: block; }
+.mark img { display: block; height: 26px; width: auto; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; height: 32px; padding: 0 12px;
+  border: 1px solid var(--ink); border-radius: var(--radius-md);
+  background: var(--ink); color: #fff;
+  font: 500 13px/1 var(--font-sans);
+  cursor: pointer;
+  transition: background 150ms cubic-bezier(0.2,0,0,1);
+}
+.btn:hover { background: #262626; text-decoration: none; }
+
+/* Hero --------------------------------------------------------------- */
+.hero { padding: 96px 0 72px; }
+.eyebrow {
+  font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gray-500); margin: 0 0 20px;
+}
+h1 {
+  margin: 0 0 20px;
+  font: 800 clamp(34px, 6vw, 52px)/1.04 var(--font-sans);
+  letter-spacing: -0.024em;
+  max-width: 17ch;
+}
+.lead { margin: 0; max-width: 62ch; font-size: 20px; line-height: 30px; color: var(--gray-700); }
+
+/* Capability list ---------------------------------------------------- */
+.pipeline { border-top: 1px solid var(--gray-200); }
+.pipeline .wrap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.step { padding: 32px 24px 36px; border-left: 1px solid var(--gray-200); }
+.step:nth-child(4n+1) { border-left: 0; padding-left: 0; }
+.step:nth-child(4n) { padding-right: 0; }
+.step .n { font: 500 12px/16px var(--font-mono); color: var(--gray-400); }
+.step h2 { margin: 12px 0 8px; font: 600 18px/26px var(--font-sans); letter-spacing: -0.005em; }
+.step p { margin: 0; font-size: 15px; line-height: 24px; color: var(--gray-500); }
+
+/* Detail block ------------------------------------------------------- */
+.detail { border-top: 1px solid var(--gray-200); background: var(--gray-50); }
+.detail .wrap { padding: 56px 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+.detail h3 { margin: 0 0 12px; font: 600 20px/28px var(--font-sans); letter-spacing: -0.005em; }
+.detail p { margin: 0 0 16px; color: var(--gray-700); font-size: 16px; line-height: 26px; }
+.detail p:last-child { margin-bottom: 0; }
+.card {
+  background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
+  padding: 20px; box-shadow: 0 1px 2px rgba(10,10,10,0.05);
+}
+.card .label { font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-500); }
+.iface { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 12px; }
+.iface li { display: flex; align-items: baseline; gap: 12px; font-size: 15px; line-height: 22px; }
+.iface code { font: 500 13px/22px var(--font-mono); color: var(--ink); }
+.iface span { color: var(--gray-500); font-size: 14px; }
+.dot { width: 6px; height: 6px; border-radius: 999px; background: var(--ink); flex: none; transform: translateY(-2px); }
+.dot.hollow { background: #fff; border: 1px solid var(--gray-300); }
+
+/* Access + contact ---------------------------------------------------- */
+.access { border-top: 1px solid var(--gray-200); }
+.access .wrap { padding: 56px 24px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); gap: 48px; align-items: start; }
+.access p { margin: 0 0 24px; max-width: 46ch; color: var(--gray-700); }
+.access strong { font-weight: 600; color: var(--ink); }
+.btn-lg { height: 40px; padding: 0 16px; font-size: 14px; }
+
+.contact { margin: 0; display: grid; gap: 12px; }
+.contact .label { font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-500); }
+.field { display: grid; gap: 6px; }
+.field label { font: 500 14px/20px var(--font-sans); color: var(--ink); }
+.field input, .field textarea {
+  width: 100%; font: 400 14px/20px var(--font-sans); color: var(--ink);
+  background: #fff; border: 1px solid var(--gray-300); border-radius: var(--radius-md);
+  padding: 9px 12px; outline: none;
+  transition: border-color 150ms cubic-bezier(0.2,0,0,1), box-shadow 150ms cubic-bezier(0.2,0,0,1);
+}
+.field textarea { resize: vertical; min-height: 76px; }
+.field input:focus, .field textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px var(--ink), 0 0 0 5px var(--gray-200); }
+.contact .hint { margin: 0; font-size: 13px; line-height: 20px; color: var(--gray-500); }
+.contact .hint a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* Footer ------------------------------------------------------------- */
+footer { border-top: 1px solid var(--gray-200); }
+footer .wrap { padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer, footer a { font-size: 13px; line-height: 20px; color: var(--gray-500); }
+footer a:hover { color: var(--ink); }
+
+@media (max-width: 880px) {
+  .pipeline .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .step { border-left: 1px solid var(--gray-200); padding-left: 24px; padding-right: 24px; }
+  .step:nth-child(2n+1) { border-left: 0; padding-left: 0; }
+  .step:nth-child(2n) { padding-right: 0; }
+  .step:nth-child(n+3) { border-top: 1px solid var(--gray-200); }
+}
+@media (max-width: 720px) {
+  .hero { padding: 64px 0 48px; }
+  .detail .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .access .wrap { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .pipeline .wrap { grid-template-columns: minmax(0, 1fr); }
+  .step { padding: 24px 0; border-left: 0; border-top: 1px solid var(--gray-200); }
+  .step:first-child { border-top: 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="/" aria-label="Corpus">
+      <img src="logo.svg" alt="Corpus" width="94" height="26">
+    </a>
+    <a class="btn" href="/admin">Sign in</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Internal knowledge service</p>
+      <h1>Company knowledge, retrievable.</h1>
+      <p class="lead">Corpus ingests our documents, indexes them for hybrid search, extracts structured facts about clients, projects and people, and serves all of it to other systems over MCP.</p>
+    </div>
+  </section>
+
+  <section class="pipeline">
+    <div class="wrap">
+      <div class="step">
+        <div class="n">01</div>
+        <h2>Ingest</h2>
+        <p>Documents arrive from connected sources, are parsed into sections, and classified by kind.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h2>Index</h2>
+        <p>Hybrid retrieval over chunks, sections, and whole documents: vector, keyword, and rerank.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h2>Extract</h2>
+        <p>An extraction pass proposes clients, projects, and people. Nothing is confirmed without an operator.</p>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <h2>Serve</h2>
+        <p>Read-only tools over MCP, so assistants and internal tools answer from the same source.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="wrap">
+      <div>
+        <h3>Every answer carries its provenance</h3>
+        <p>Search results and extracted facts point back to the document they came from: title, kind, source URL, and page range. Nothing is asserted without a trace.</p>
+        <p>Operators review proposed entities, merge duplicates, govern the document-kind vocabulary, and publish organization-wide guides from the admin console.</p>
+      </div>
+      <div class="card">
+        <div class="label">Interfaces</div>
+        <ul class="iface">
+          <li><span class="dot"></span><code>MCP</code><span>Read-only tools for assistants</span></li>
+          <li><span class="dot"></span><code>/internal/search</code><span>Hybrid search over the corpus</span></li>
+          <li><span class="dot"></span><code>/admin</code><span>Operator console, SSO only</span></li>
+          <li><span class="dot hollow"></span><code>/assets/:id</code><span>Public asset pass-through</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="access">
+    <div class="wrap">
+      <div>
+        <p><strong>Access is limited.</strong> Corpus holds internal company material. Sign-in is restricted to our Google Workspace domain, and API clients use individually issued tokens.</p>
+        <a class="btn btn-lg" href="/admin">Sign in</a>
+      </div>
+      <form class="contact" method="post" action="https://formspree.io/f/YOUR_FORM_ID">
+        <div class="label">Get in touch</div>
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required placeholder="you@company.com">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="3" required placeholder="What do you need from Corpus?"></textarea>
+        </div>
+        <button class="btn btn-lg" type="submit">Send message</button>
+        <p class="hint">Or email <a href="mailto:hello@dascorpus.xyz">hello@dascorpus.xyz</a> directly.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Corpus, dascorpus.xyz</span>
+    <span>Internal service. Not open for signup.</span>
+  </div>
+</footer>
+
+</body>
+</html>

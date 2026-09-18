@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /$
+Disallow: /admin
+Disallow: /internal
+Disallow: /mcp
+
+Sitemap: https://dascorpus.xyz/sitemap.xml
