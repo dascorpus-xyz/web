@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · Corpus</title>
+<meta name="description" content="The terms that govern access to Corpus, an invitation-only internal knowledge service.">
+<link rel="canonical" href="https://dascorpus.xyz/terms/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Corpus">
+<meta property="og:url" content="https://dascorpus.xyz/terms/">
+<meta property="og:title" content="Terms of Service · Corpus">
+<meta property="og:description" content="The terms that govern access to Corpus, an invitation-only internal knowledge service.">
+<meta property="og:image" content="https://dascorpus.xyz/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --gray-50: #fafafa;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 16px/28px var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: 100%; max-width: 920px; margin: 0 auto; padding: 0 24px; }
+
+/* Header ------------------------------------------------------------- */
+header {
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky; top: 0; background: #fff;
+  z-index: 10;
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.mark { display: block; }
+.mark img { display: block; height: 26px; width: auto; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; height: 32px; padding: 0 12px;
+  border: 1px solid var(--ink); border-radius: var(--radius-md);
+  background: var(--ink); color: #fff;
+  font: 500 13px/1 var(--font-sans);
+  cursor: pointer;
+  transition: background 150ms cubic-bezier(0.2,0,0,1);
+}
+.btn:hover { background: #262626; text-decoration: none; }
+
+/* Legal prose --------------------------------------------------------- */
+.legal { padding: 72px 0 80px; }
+.legal .wrap > * { max-width: 68ch; }
+.eyebrow {
+  font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gray-500); margin: 0 0 20px;
+}
+h1 {
+  margin: 0 0 12px;
+  font: 800 clamp(30px, 5vw, 42px)/1.06 var(--font-sans);
+  letter-spacing: -0.022em;
+}
+.meta { margin: 0 0 32px; font: 500 13px/20px var(--font-mono); color: var(--gray-400); }
+.lede { margin: 0 0 8px; font-size: 18px; line-height: 30px; color: var(--gray-700); }
+h2 {
+  margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--gray-200);
+  font: 600 20px/28px var(--font-sans); letter-spacing: -0.005em;
+}
+h3 { margin: 28px 0 8px; font: 600 16px/24px var(--font-sans); }
+.legal p { margin: 0 0 16px; color: var(--gray-700); font-size: 16px; line-height: 26px; }
+.legal ul { margin: 0 0 16px; padding-left: 22px; color: var(--gray-700); }
+.legal li { margin-bottom: 8px; font-size: 16px; line-height: 26px; }
+.legal li:last-child { margin-bottom: 0; }
+.legal a { text-decoration: underline; text-underline-offset: 2px; }
+.legal code { font: 500 14px/24px var(--font-mono); }
+.callout {
+  margin: 0 0 16px; padding: 20px;
+  background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout .label {
+  font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gray-500); margin: 0 0 10px;
+}
+
+/* Footer ------------------------------------------------------------- */
+footer { border-top: 1px solid var(--gray-200); }
+footer .wrap { padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer, footer a { font-size: 13px; line-height: 20px; color: var(--gray-500); }
+footer a:hover { color: var(--ink); }
+.links { display: flex; flex-wrap: wrap; gap: 16px; }
+
+@media (max-width: 720px) {
+  .legal { padding: 48px 0 56px; }
+  h2 { margin-top: 40px; }
+}
+</style></head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="/" aria-label="Corpus">
+      <img src="/logo.svg" alt="Corpus" width="94" height="26">
+    </a>
+    <a class="btn" href="/admin">Sign in</a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective 21 September 2026</p>
+
+    <p class="lede">Corpus is an internal knowledge service. Access is granted by invitation, not by signup.</p>
+    <p>These terms govern your use of Corpus and of this website. By signing in, or by using an issued API token, you accept them. If you do not accept them, do not use the service.</p>
+
+    <h2>1. What Corpus is</h2>
+    <p>Corpus ingests company documents, indexes them for search, extracts structured facts about clients, projects, and people, and serves the result to authorized operators and systems. It is operated for internal company use and is not a public product.</p>
+
+    <h2>2. Who may use it</h2>
+    <p>Access is limited to people whose Google account belongs to the permitted Google Workspace domain, and to systems holding an individually issued API token. There is no public registration.</p>
+    <p>Your credentials and tokens are yours alone. Do not share them, do not let anyone else use your account, and do not use anyone else's. Tell us promptly if you believe a credential or token has been exposed.</p>
+
+    <h2>3. Acceptable use</h2>
+    <p>Use Corpus for authorized company work. You may not:</p>
+    <ul>
+      <li>Export, publish, or pass on the material Corpus holds to anyone not entitled to see it.</li>
+      <li>Work around access controls, rate limits, or the scope of a token issued to you.</li>
+      <li>Bulk-extract the corpus by scraping or by automated means beyond what your token permits.</li>
+      <li>Probe, attack, or attempt to disrupt the service, or reverse engineer it except where the law expressly allows.</li>
+      <li>Use the service unlawfully, or in a way that puts the company in breach of an obligation to a client.</li>
+    </ul>
+
+    <h2>4. Confidentiality</h2>
+    <p>Corpus holds internal company material, including information about clients and their projects. Treat everything you see through the service as confidential. Handle it under the confidentiality obligations in your employment or engagement agreement. Those obligations do not end when your access does.</p>
+
+    <h2>5. Accuracy</h2>
+    <p>Search results and extracted facts carry a reference to the document they came from. Extraction is nonetheless automated and can be wrong, incomplete, or out of date, and a proposed entity is not a confirmed one. Check the source document before you rely on anything material. Nothing Corpus returns is legal, financial, or professional advice.</p>
+
+    <h2>6. Availability</h2>
+    <p>There is no uptime commitment. Corpus may be unavailable for maintenance or for reasons outside our control, and features may change or be withdrawn at any time without notice.</p>
+
+    <h2>7. No warranty</h2>
+    <p>Corpus is provided as is and as available, without warranties of any kind, whether express or implied, including any implied warranty of merchantability, fitness for a particular purpose, accuracy, or non-infringement, to the fullest extent permitted by law.</p>
+
+    <h2>8. Liability</h2>
+    <p>To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, or consequential loss, nor for lost profits, lost revenue, or loss or corruption of data, arising from your use of Corpus.</p>
+
+    <h2>9. Suspension and termination</h2>
+    <p>We may suspend or end your access at any time, with or without notice, including when you leave the company, when your role no longer requires access, or when these terms are breached. Tokens may be revoked individually. On termination you must stop using the service and delete any material you have taken from it.</p>
+
+    <h2>10. Fees</h2>
+    <p>Corpus is provided to authorized users at no charge. It is not sold, and no payment is ever requested through this site.</p>
+
+    <h2>11. Privacy</h2>
+    <p>Personal data is handled as described in the <a href="/privacy/">Privacy Policy</a>, which forms part of these terms.</p>
+
+    <h2>12. Changes to these terms</h2>
+    <p>Changes are posted on this page with a new effective date. Continuing to use Corpus after a change takes effect means you accept the revised terms.</p>
+
+    <h2>13. Contact</h2>
+    <p>Questions about these terms go to <a href="mailto:privacy@dascorpus.xyz">privacy@dascorpus.xyz</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Corpus, dascorpus.xyz</span>
+    <nav class="links" aria-label="Legal">
+      <a href="/">Home</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/" aria-current="page">Terms</a>
+    </nav>
+    <span>Internal service. Not open for signup.</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -156,6 +156,7 @@ footer { border-top: 1px solid var(--gray-200); }
 footer .wrap { padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 footer, footer a { font-size: 13px; line-height: 20px; color: var(--gray-500); }
 footer a:hover { color: var(--ink); }
+.links { display: flex; flex-wrap: wrap; gap: 16px; }
 
 @media (max-width: 880px) {
   .pipeline .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -264,6 +265,10 @@ footer a:hover { color: var(--ink); }
 <footer>
   <div class="wrap">
     <span>Corpus, dascorpus.xyz</span>
+    <nav class="links" aria-label="Legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
     <span>Internal service. Not open for signup.</span>
   </div>
 </footer>

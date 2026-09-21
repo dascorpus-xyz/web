@@ -9,6 +9,8 @@ this folder is served as-is by GitHub Pages.
 | --- | --- |
 | `index.html` | The page. Self-contained (inline CSS, no JS). |
 | `404.html` | GitHub Pages picks this up automatically. |
+| `privacy/index.html` | Privacy policy, served at `/privacy`. Required by Google OAuth verification. |
+| `terms/index.html` | Terms of service, served at `/terms`. Required by Google OAuth verification. |
 | `CNAME` | Custom domain, `dascorpus.xyz`. Required, do not delete. |
 | `robots.txt` | Allows `/` only; disallows `/admin`, `/internal`, `/mcp`. |
 | `sitemap.xml` | Single-URL sitemap. Bump `lastmod` when the copy changes. |
@@ -24,7 +26,7 @@ Branch-based Pages (recommended, so the landing page stays off `main`):
 git checkout -b gh-pages
 git rm -r --cached . -q            # gh-pages holds only the site
 # copy this folder's contents to the repo root, then:
-git add index.html 404.html CNAME robots.txt sitemap.xml og.png favicon.svg
+git add index.html 404.html privacy terms CNAME robots.txt sitemap.xml og.png favicon.svg
 git commit -m "Landing page for dascorpus.xyz"
 git push -u origin gh-pages
 ```
@@ -58,6 +60,27 @@ Plus `AAAA` (optional, IPv6):
 ```
 
 And `CNAME www → <org>.github.io.`
+
+## Google OAuth verification
+
+`/privacy` and `/terms` exist so the Corpus OAuth client can be switched from
+Internal to External in the Google Cloud console. Before submitting:
+
+1. **Create the `privacy@dascorpus.xyz` alias.** Both pages name it as the
+   contact address and reviewers do check that it resolves.
+2. **Verify `dascorpus.xyz` in Google Search Console** under the same Google
+   account that owns the Cloud project. The consent screen rejects homepage,
+   privacy, and terms URLs on an unverified domain.
+3. **Check the app domain matches.** The consent screen's authorized domain has
+   to cover wherever the app actually runs. If `/admin` is served from Railway
+   or another host rather than from `dascorpus.xyz`, resolve that mismatch first
+   or review will fail regardless of these two pages.
+4. **Keep the scopes to `openid`, `email`, and `profile`.** The privacy policy
+   states those three and nothing else. Adding Drive, Gmail, or Calendar means
+   rewriting the Google account data section and a much heavier review.
+
+Both pages are crawlable: `robots.txt` disallows only `/admin`, `/internal`, and
+`/mcp`.
 
 ## Before going live: three things to decide
 

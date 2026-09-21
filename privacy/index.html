@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Corpus</title>
+<meta name="description" content="How Corpus handles Google account data, what it stores, and how to ask for it to be removed.">
+<link rel="canonical" href="https://dascorpus.xyz/privacy/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Corpus">
+<meta property="og:url" content="https://dascorpus.xyz/privacy/">
+<meta property="og:title" content="Privacy Policy · Corpus">
+<meta property="og:description" content="How Corpus handles Google account data, what it stores, and how to ask for it to be removed.">
+<meta property="og:image" content="https://dascorpus.xyz/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --gray-50: #fafafa;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 16px/28px var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { width: 100%; max-width: 920px; margin: 0 auto; padding: 0 24px; }
+
+/* Header ------------------------------------------------------------- */
+header {
+  border-bottom: 1px solid var(--gray-200);
+  position: sticky; top: 0; background: #fff;
+  z-index: 10;
+}
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.mark { display: block; }
+.mark img { display: block; height: 26px; width: auto; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; height: 32px; padding: 0 12px;
+  border: 1px solid var(--ink); border-radius: var(--radius-md);
+  background: var(--ink); color: #fff;
+  font: 500 13px/1 var(--font-sans);
+  cursor: pointer;
+  transition: background 150ms cubic-bezier(0.2,0,0,1);
+}
+.btn:hover { background: #262626; text-decoration: none; }
+
+/* Legal prose --------------------------------------------------------- */
+.legal { padding: 72px 0 80px; }
+.legal .wrap > * { max-width: 68ch; }
+.eyebrow {
+  font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gray-500); margin: 0 0 20px;
+}
+h1 {
+  margin: 0 0 12px;
+  font: 800 clamp(30px, 5vw, 42px)/1.06 var(--font-sans);
+  letter-spacing: -0.022em;
+}
+.meta { margin: 0 0 32px; font: 500 13px/20px var(--font-mono); color: var(--gray-400); }
+.lede { margin: 0 0 8px; font-size: 18px; line-height: 30px; color: var(--gray-700); }
+h2 {
+  margin: 48px 0 12px; padding-top: 24px; border-top: 1px solid var(--gray-200);
+  font: 600 20px/28px var(--font-sans); letter-spacing: -0.005em;
+}
+h3 { margin: 28px 0 8px; font: 600 16px/24px var(--font-sans); }
+.legal p { margin: 0 0 16px; color: var(--gray-700); font-size: 16px; line-height: 26px; }
+.legal ul { margin: 0 0 16px; padding-left: 22px; color: var(--gray-700); }
+.legal li { margin-bottom: 8px; font-size: 16px; line-height: 26px; }
+.legal li:last-child { margin-bottom: 0; }
+.legal a { text-decoration: underline; text-underline-offset: 2px; }
+.legal code { font: 500 14px/24px var(--font-mono); }
+.callout {
+  margin: 0 0 16px; padding: 20px;
+  background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
+}
+.callout p:last-child { margin-bottom: 0; }
+.callout .label {
+  font: 600 12px/16px var(--font-sans); letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--gray-500); margin: 0 0 10px;
+}
+
+/* Footer ------------------------------------------------------------- */
+footer { border-top: 1px solid var(--gray-200); }
+footer .wrap { padding: 28px 24px 48px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+footer, footer a { font-size: 13px; line-height: 20px; color: var(--gray-500); }
+footer a:hover { color: var(--ink); }
+.links { display: flex; flex-wrap: wrap; gap: 16px; }
+
+@media (max-width: 720px) {
+  .legal { padding: 48px 0 56px; }
+  h2 { margin-top: 40px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="/" aria-label="Corpus">
+      <img src="/logo.svg" alt="Corpus" width="94" height="26">
+    </a>
+    <a class="btn" href="/admin">Sign in</a>
+  </div>
+</header>
+
+<main class="legal">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 21 September 2026</p>
+
+    <p class="lede">Corpus is a company knowledge service. It ingests documents, indexes them for search, extracts structured facts, and serves them to internal systems over MCP.</p>
+    <p>This policy explains what personal data Corpus handles, why it handles it, how long it is kept, and how to have it removed. It covers two groups of people: operators who sign in to Corpus with a Google account, and visitors to this website.</p>
+
+    <h2>Google account data</h2>
+    <p>Corpus uses Google Sign-In to authenticate operators. It requests three scopes and no others:</p>
+    <ul>
+      <li><code>openid</code>, a stable identifier for your Google account.</li>
+      <li><code>email</code>, your email address and whether Google has verified it.</li>
+      <li><code>profile</code>, your name and profile picture.</li>
+    </ul>
+    <p>From those scopes Corpus receives your name, email address, profile picture URL, Google account identifier, and the Google Workspace domain your account belongs to.</p>
+
+    <h3>Why Corpus needs it</h3>
+    <ul>
+      <li>To verify who you are when you sign in.</li>
+      <li>To confirm your account belongs to the permitted Workspace domain. Accounts outside it are refused.</li>
+      <li>To attribute operator actions in the audit trail, such as who confirmed an extracted entity or published a guide.</li>
+    </ul>
+    <p>That is the full extent of it. Corpus does not request access to Gmail, Drive, Calendar, Contacts, or any other Google service, and it cannot read, create, or modify your files or messages.</p>
+
+    <h3>Limited Use</h3>
+    <div class="callout">
+      <p class="label">Google API Services User Data Policy</p>
+      <p>Corpus's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+    <p>In practice that means Corpus does not sell this data, does not use it for advertising or any form of ad profiling, does not use it to train machine learning or AI models, and does not transfer it to third parties except as required to operate the service, comply with law, or in connection with a merger or acquisition where this policy continues to apply. No human reads your Google account data except where you have asked for support, where it is needed to investigate abuse or a security incident, or where the law requires it.</p>
+
+    <h3>How long it is kept</h3>
+    <p>Your account record is kept for as long as you have access to Corpus. When your access is removed, the record is deleted within 30 days. Entries in the audit trail may retain your name and email address for longer where they are needed to keep an accurate record of changes to company knowledge.</p>
+
+    <h3>Withdrawing access</h3>
+    <p>You can revoke Corpus's access to your Google account at any time from your <a href="https://myaccount.google.com/permissions" rel="noopener">Google account permissions page</a>. Revoking access signs you out of Corpus and prevents further sign-in. To have your stored account record deleted as well, email the address at the bottom of this page.</p>
+
+    <h2>Website visitors</h2>
+    <p>This website sets no cookies, runs no analytics, and carries no advertising or tracking scripts. Two third parties receive data when you use it:</p>
+    <ul>
+      <li><strong>Formspree</strong> processes the contact form. The email address and message you submit are sent to Formspree, which forwards them to us. See the <a href="https://formspree.io/legal/privacy-policy/" rel="noopener">Formspree privacy policy</a>. If you would rather not use the form, email us directly.</li>
+      <li><strong>Google Fonts</strong> serves the typefaces this site uses. Your browser requests them from Google's servers, which receive your IP address and user agent in the process. See the <a href="https://policies.google.com/privacy" rel="noopener">Google privacy policy</a>.</li>
+    </ul>
+    <p>The site is hosted on GitHub Pages, which keeps standard server request logs.</p>
+
+    <h2>Document content</h2>
+    <p>Corpus indexes documents supplied by the company that operates it. Those documents may name people, including employees, clients, and contacts. Corpus stores that content, extracts structured facts from it, and returns it to authorized operators and systems with a reference back to the source document. It is not published, not made publicly searchable, and not made available to anyone outside the permitted Workspace domain and the holders of individually issued API tokens.</p>
+
+    <h2>Security</h2>
+    <p>Access requires Google Sign-In from the permitted Workspace domain, or an individually issued API token. Traffic to Corpus is encrypted in transit with TLS. Tokens can be revoked individually and at any time.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask for a copy of the personal data Corpus holds about you, ask for it to be corrected, ask for it to be deleted, or object to how it is used. Write to the address below and we will respond within 30 days. If you are unhappy with the response, you may complain to your local data protection authority.</p>
+
+    <h2>Children</h2>
+    <p>Corpus is a workplace tool. It is not directed at children and is not intended for anyone under 16.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>Changes are posted on this page with a new effective date. Where a change materially affects how operator data is handled, operators are notified by email before it takes effect.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy, or requests about your data, go to <a href="mailto:privacy@dascorpus.xyz">privacy@dascorpus.xyz</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Corpus, dascorpus.xyz</span>
+    <nav class="links" aria-label="Legal">
+      <a href="/">Home</a>
+      <a href="/privacy/" aria-current="page">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+    <span>Internal service. Not open for signup.</span>
+  </div>
+</footer>
+
+</body>
+</html>
